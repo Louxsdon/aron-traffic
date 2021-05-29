@@ -1,0 +1,33 @@
+.form-group{
+  @apply py-1;
+}
+.form-control{
+  @apply w-full px-3 py-2 border rounded text-gray-500 focus:outline-none focus:border-blue-500 focus:placeholder-blue-500
+}
+
+.submit-btn{
+  @apply mt-3 py-3 px-4 cursor-pointer rounded bg-blue-800 w-full text-blue-100 focus:outline-none focus:ring-4
+}
+
+table{
+  @apply p-3 py-1 rounded
+}
+th{
+  @apply py-2 px-3 bg-indigo-200
+}
+tr:nth-child(even){
+  @apply bg-gray-100
+}
+td{
+  @apply py-1 px-3
+}
+
+.side-link.active{
+  @apply bg-gray-300 px-4 py-2 rounded-l-full text-gray-900
+}
+.side-link:hover{
+  @apply bg-gray-300 px-4 py-2 rounded-l-full text-gray-900 transition duration-500 ease-in-out transform
+}
+.side-link{
+  @apply flex items-center px-4 py-2 space-x-2 
+}
