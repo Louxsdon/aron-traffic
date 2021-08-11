@@ -1,28 +1,20 @@
-import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
-import { BiUserCircle } from "react-icons/bi";
-import { IoCarSport } from "react-icons/io5";
-import { FaRoute } from "react-icons/fa";
-import { MdSearch, MdNotifications } from "react-icons/md";
-import { GiTrafficLightsReadyToGo } from "react-icons/gi";
-import { TiLocationArrow } from "react-icons/ti";
 import { BiCaretDown } from "react-icons/bi";
-import Alert from "../../components/Alert";
-import UTopbar from "../../components/UTopbar";
-import USidebar from "../../components/USidebar";
+import Topbar from "../../components/Topbar";
+import Sidebar from "../../components/Sidebar";
 
-export default function Dashboard(props) {
+export default function Traffics(props) {
   return (
     <div>
       <Head>
-        <title>ARON | Dashboard</title>
+        <title>ARON | Traffics</title>
       </Head>
       <div className="flex w-full">
-        <USidebar />
+        <Sidebar />
         <main className="w-full h-screen overflow-y-auto sticky top-0 right-0 ">
-          <UTopbar />
+          <Topbar />
 
           {/* Main Dashborad Section */}
           <div className="px-8">

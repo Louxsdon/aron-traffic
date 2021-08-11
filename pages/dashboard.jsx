@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
-import { BiUserCircle } from "react-icons/bi";
 import { IoCarSport } from "react-icons/io5";
-import { FaUserCircle } from "react-icons/fa";
-import { MdSearch, MdNotifications } from "react-icons/md";
 import { GiTrafficLightsReadyToGo } from "react-icons/gi";
 import { RiPoliceCarFill } from "react-icons/ri";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -35,7 +32,7 @@ export default function Dashboard(props) {
       <div className="flex w-full">
         <Sidebar handleClick={handleAlert} />
         <main className="w-full h-screen overflow-y-auto sticky top-0 right-0 ">
-          <Topbar/>
+          <Topbar />
 
           {/* Main Dashborad Section */}
           <div className="px-8">

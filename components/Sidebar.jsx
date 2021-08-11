@@ -9,10 +9,16 @@ export default function Sidebar(props) {
     <>
       <aside className=" w-80 bg-gray-900 h-screen text-gray-200">
         <div className="text-center bg-gray-800 p-4">
-          <button onClick={props.handleClick} className="focus:outline-none"><img className="w-24 inline-block" src="/imgs/aron.png" alt="Logo" /></button>
+          <button onClick={props.handleClick} className="focus:outline-none">
+            <img
+              className="w-24 inline-block"
+              src="/imgs/aron.png"
+              alt="Logo"
+            />
+          </button>
           <h2>ARON Traffic System</h2>
         </div>
-        
+
         <div className="pl-8 space-y-1 mt-12 text-lg">
           <div className="side-link active">
             <MdDashboard className="inline-block" />
@@ -22,13 +28,13 @@ export default function Sidebar(props) {
           </div>
           <div className="side-link">
             <RiPoliceCarFill className="inline-block" />
-            <Link href="/dashboard">
+            <Link href="/dashboard/cases">
               <a>Cases</a>
             </Link>
           </div>
           <div className="side-link">
             <FaTrafficLight className="inline-block" />
-            <Link href="/dashboard">
+            <Link href="/dashboard/traffics">
               <a>Traffics</a>
             </Link>
           </div>

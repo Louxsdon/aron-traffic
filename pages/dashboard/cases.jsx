@@ -2,12 +2,11 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
-import Alert from "../../components/Alert";
-import UTopbar from "../../components/UTopbar";
+import Topbar from "../../components/Topbar";
 import Sidebar from "../../components/Sidebar";
 import axios from "axios";
 
-export default function History(props) {
+export default function Cases(props) {
   const config = {
     headers: {
       "Content-Type": "application/json",
@@ -28,19 +27,19 @@ export default function History(props) {
   return (
     <div>
       <Head>
-        <title>ARON | History</title>
+        <title>ARON | Cases</title>
       </Head>
       <div className="flex w-full">
         <Sidebar />
         <main className="w-full h-screen overflow-y-auto sticky top-0 right-0 ">
-          <UTopbar />
+          <Topbar />
 
           {/* Main Dashborad Section */}
           <div className="px-8">
             <div className="flex justify-between space-x-4 max-w-full">
               <div className="table-section m-aut px-4 py-5 mt-20 w-2/3 border rounded-md">
                 <div className="flex justify-between">
-                  <h3 className="font-bold">Routes History</h3>
+                  <h3 className="font-bold">Recent Cases</h3>
                   <Link href="">
                     <a className="link-btn px-3 py-1 bg-pink-600 text-pink-200 rounded">
                       View All <BsArrowRightShort className="inline-block" />
